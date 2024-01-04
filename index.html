@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraBooks</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="cabeçalho">
+        <div class="conteiner">
+            <input type="checkbox" id="menu" class="conteiner__botao">
+            <label for="menu">
+                <span class="cabeçalho__menu-hamburguer"></span>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu__titulo">Categorias</li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Romance</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Fantasia</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Histórico</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Juvenil</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Smut</a>
+                </li>
+            </ul>
+            <img src="img/livro.svg" alt="Logo da Alurabooks" class="conteiner__imagem__livro">
+        </div>
+        <div class="conteiner">
+            <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos" class="conteiner__imagem"></a>
+            <a href="#"><img src="img/Sacola.svg" alt="Carrinho de compras" class="conteiner__imagem"></a>
+            <a href="#"><img src="img/Usuario.svg" alt="Meu perfil" class="conteiner__imagem"></a>
+        </div>
+    </header>
+    <main>
+        <section class="banner">
+            <h2 class="banner__titulo">Procurando um Livro Específico?</h2>
+            <p class="banner__texto">Encontre na sua estante a leitura perfeita para o seu momento!</p>
+            <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
+        </section>
+        <section class="carrossel">
+            <h2 class="carrossel__titulo">Últimos Livros Adicionados</h2>
+            <!-- Slider main container -->
+            <div class="swiper">
+                  <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="img/acotar.svg" alt="corte de espinhos e rosas"></div>
+            <div class="swiper-slide"><img src="img/belo desastre.svg" alt="belo desastre"></div>
+            <div class="swiper-slide"><img src="img/a ballad of never after.svg" alt="a ballad of never after"></div>
+            <div class="swiper-slide"><img src="img/jogos de herança.svg" alt="jogos de herança"></div>
+            <div class="swiper-slide"><img src="img/american roommate experiment.svg" alt="the american roommate experiment"></div>
+            <div class="swiper-slide"><img src="img/love, theoretically.svg" alt="love, theoretically"></div>
+            <div class="swiper-slide"><img src="img/the hating game.svg" alt="the hating game"></div>
+            <div class="swiper-slide"><img src="img/the spanish love deception.svg" alt="the spanish love deception"></div>
+            <div class="swiper-slide"><img src="img/twisted hate.svg" alt="twisted hate"></div>
+            <div class="swiper-slide"><img src="img/um casamento conveniente.svg" alt="um casamento conveniente"></div>
+            </div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            </div>
+            <div class="card">
+                <div class="card__descricao">
+                    <div class="descricao">
+                        <h3 class="descricao__titulo">Lendo Agora...</h3>
+                        <h2 class="descricao__titulo-livro">Caraval</h2>
+                        <p class="descricao__texto">"Caraval" conta sobre duas irmãs, Scarlett e Donatella, em um misterioso jogo, onde a magia, as ilusões e os segredos se entrelaçam, desafiando a realidade e testando os limites do que é possível.</p>
+                    </div>
+                    <a href="#" class="descricao__link__imagem"><img src="img/caraval.svg" class="descricao__imagem" alt="Caraval capa"></a>
+                </div>
+                <div class="card__botoes">
+                    <ul class="botoes">
+                        <li class="botoes__itens"><img src="img/Favoritos.svg" alt="Favoritar"></li>
+                    </ul>
+                    <a href="#" class="botoes__ancora">Saiba Mais</a>
+                </div>
+            </div>
+        </section>
+        <section class="carrossel">
+            <h2 class="carrossel__titulo">Favoritos</h2>
+             <!-- Slider main container -->
+             <div class="swiper">
+                <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="img/daughter of the pirate king.svg" alt="daughter of the pirate king"></div>
+            <div class="swiper-slide"><img src="img/lendario.svg" alt="lendário"></div>
+            <div class="swiper-slide"><img src="img/minha doce ragazza.svg" alt="minha doce ragazza"></div>
+            <div class="swiper-slide"><img src="img/minha principessa devassa.svg" alt="minha principessa devassa"></div>
+            <div class="swiper-slide"><img src="img/nevernight.svg" alt="nevernight"></div>
+            <div class="swiper-slide"><img src="img/para conquistar um libertino.svg" alt="para conquistar um libertino"></div>
+            <div class="swiper-slide"><img src="img/psycho shifters.svg" alt="psycho shifters"></div>
+            <div class="swiper-slide"><img src="img/the king of battle and blood.svg" alt="the king of battle and blood""></div>
+            <div class="swiper-slide"><img src="img/under one roof.svg" alt="under one roof"></div>
+            <div class="swiper-slide"><img src="img/the night circus.svg" alt="the night circus"></div>
+            </div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            </div>
+            <div class="card">
+                <div class="card__descricao">
+                    <div class="descricao">
+                        <h3 class="descricao__titulo">Último lido...</h3>
+                        <h2 class="descricao__titulo-livro">The Night Circus</h2>
+                        <p class="descricao__texto">"The Night Circus" é uma envolvente história de magia que acompanha a competição mágica entre dois ilusionistas, Celia e Marco, enquanto eles se apaixonam em meio a um circo misterioso que surge à noite.</p>
+                    </div>
+                    <a href="#" class="descricao__link__imagem"><img src="img/the night circus.svg" class="descricao__imagem" alt="the night circus"></a>
+                </div>
+                <div class="card__botoes">
+                    <ul class="botoes__ultimo-lido">
+                        <li><img src="img/Favoritos.svg" alt="Favoritar  class="botoes__lido"></li>
+                        <li><img src="img/Estrelinhas.svg"alt="estrelas" class="botoes__lido"></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="topicos">
+            <h2 class="topicos__titulo">Gêneros Visitados:</h2>
+            <ul class="topicos__lista">
+                <li class="topicos__item"><a href="#" class="topicos__ancora">Romance</a></li>
+                <li class="topicos__item"><a href="#" class="topicos__ancora">Fantasia</a></li>
+                <li class="topicos__item"><a href="#" class="topicos__ancora">Histórico</a></li>
+                <li class="topicos__item"><a href="#" class="topicos__ancora">Smut</a></li>
+                <li class="topicos__item"><a href="#" class="topicos__ancora">Juvenil</a></li>
+                <li class="topicos__item"><a href="#" class="topicos__ancora">Aventura</a></li>
+                <li class="topicos__item"><a href="#" class="topicos__ancora">Mistério</a></li>
+                <li class="topicos__item"><a href="#" class="topicos__ancora">Distopia</a></li>
+        </ul>
+        </section>
+        <section class="contatos">
+            <h2 class="contatos__titulo">Faça seu Cadastro</h2>
+            <p class="contatos__texto">E personalize sua estante do seu jeito!</p>
+            <input type="email" class="contatos__email" placeholder="Cadastre seu Email">
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+             spaceBetween: 10,
+             slidesPerView: 3,
+             pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+        });
+    </script>
+    <hr>
+    <footer class="rodape">
+        <h2 class="rodape__titulo">Desenvolvido por Carolina M. Martins</h2>
+    </footer>
+</body>
+</html>
