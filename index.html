@@ -33,12 +33,42 @@
                     <a href="#" class="lista-menu__link">Smut</a>
                 </li>
             </ul>
-            <a class="estante__imagem" href="#"><img src="img/livro.jfif" alt="estante" class="conteiner__imagem__livro"></a>
+            <a class="estante__imagem" href="index.html"><img src="img/livro.jfif" alt="estante" class="conteiner__imagem__livro"></a>
+            <h1 class="conteiner__titulo"><b class="conteiner__titulo--negrito">Book</b>Shelf</h1>
         </div>
+        <ul class="opcoes">
+            <input type="checkbox" id="opcoes-menu" class="opcoes__button">
+            <label for="opcoes-menu">
+                <li class="opcoes__item"><b class="opcoes__item__categoria">Categorias</b></li>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Romance</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Fantasia</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Histórico</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Juvenil</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Smut</a>
+                </li>
+            </ul>
+            <li class="opcoes__item"><a href="#" class="opcoes__link">Favoritos</a></li>
+            <li class="opcoes__item"><a href="#" class="opcoes__link">Minha Estante</a></li>
+        </ul>
         <div class="conteiner">
-            <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos" class="conteiner__imagem"></a>
-            <a href="#"><img src="img/Sacola.svg" alt="Carrinho de compras" class="conteiner__imagem"></a>
-            <a href="#"><img src="img/Usuario.svg" alt="Meu perfil" class="conteiner__imagem"></a>
+            <a href="#">
+                <img src="img/Favoritos.svg" alt="Meus favoritos" class="conteiner__imagem conteiner__imagem__transparente">
+            </a>
+            <a href="#" class="conteiner__link">
+                <img src="img/Usuario.svg" alt="Meu perfil" class="conteiner__imagem">
+                <p class="conteiner__texto">Meu Perfil</p>
+            </a>
         </div>
     </header>
     <main>
@@ -49,36 +79,37 @@
         </section>
         <section class="carrossel">
             <h2 class="carrossel__titulo">Últimos Livros Adicionados</h2>
-            <!-- Slider main container -->
-            <div class="swiper">
+            <div class="carrossel__conteiner">
+                <!-- Slider main container -->
+                <div class="swiper">
                   <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide"><a href="#"><img src="img/acotar.jfif" alt="corte de espinhos e rosas"></a></div>
-            <div class="swiper-slide"><img src="img/belo desastre.jfif" alt="belo desastre"></div>
-            <div class="swiper-slide"><img src="img/a ballad of never after.jfif" alt="a ballad of never after"></div>
-            <div class="swiper-slide"><img src="img/jogos de herança.jfif" alt="jogos de herança"></div>
-            <div class="swiper-slide"><img src="img/american roommate experiment.jfif" alt="the american roommate experiment"></div>
-            <div class="swiper-slide"><img src="img/love, theoretically.jfif" alt="love, theoretically"></div>
-            <div class="swiper-slide"><img src="img/the hating game.jfif" alt="the hating game"></div>
-            <div class="swiper-slide"><img src="img/the spanish love deception.jfif" alt="the spanish love deception"></div>
-            <div class="swiper-slide"><img src="img/twisted hate.jfif" alt="twisted hate"></div>
-            <div class="swiper-slide"><img src="img/um casamento conveniente.jfif" alt="um casamento conveniente"></div>
-            </div>
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-            </div>
-            <div class="card">
+                <div class="swiper-pagination"></div>
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><a href="#"><img src="img/acotar.jfif" alt="corte de espinhos e rosas"></a></div>
+                <div class="swiper-slide"><a href="#"><img src="img/belo desastre.jfif" alt="belo desastre"></a></div>
+                <div class="swiper-slide"><a href="#"><img src="img/a ballad of never after.jfif" alt="a ballad of never after"></a></div>
+                <div class="swiper-slide"><a href="#"><img src="img/jogos de herança.jfif" alt="jogos de herança"></a></div>
+                <div class="swiper-slide"><a href="#"><img src="img/american roommate experiment.jfif" alt="the american roommate experiment"></a></div>
+                <div class="swiper-slide"><a href="#"><img src="img/love, theoretically.jfif" alt="love, theoretically"></a></div>
+                <div class="swiper-slide"><a href="#"><img src="img/the hating game.jfif" alt="the hating game"></a></div>
+                <div class="swiper-slide"><a href="#"><img src="img/the spanish love deception.jfif" alt="the spanish love deception"></a></div>
+                <div class="swiper-slide"><a href="#"><img src="img/twisted hate.jfif" alt="twisted hate"></a></div>
+                <div class="swiper-slide"><a href="#"><img src="img/um casamento conveniente.jfif" alt="um casamento conveniente"></a></div>
+                </div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                </div>
+                <div class="card">
                 <div class="card__descricao">
                     <div class="descricao">
                         <h3 class="descricao__titulo">Lendo Agora...</h3>
                         <h2 class="descricao__titulo-livro">Caraval</h2>
                         <p class="descricao__texto">"Caraval" conta sobre duas irmãs, Scarlett e Donatella, em um misterioso jogo, onde a magia, as ilusões e os segredos se entrelaçam, desafiando a realidade e testando os limites do que é possível.</p>
                     </div>
-                    <a href="#" class="descricao__link__imagem"><img src="img/caraval.jpg" class="descricao__imagem" alt="Caraval capa"></a>
+                    <img src="img/caraval.jpg" class="descricao__imagem" alt="Caraval capa">
                 </div>
                 <div class="card__botoes">
                     <ul class="botoes">
@@ -90,42 +121,45 @@
         </section>
         <section class="carrossel">
             <h2 class="carrossel__titulo">Favoritos</h2>
-             <!-- Slider main container -->
-             <div class="swiper">
+            <div class="carrossel__conteiner">
+                <!-- Slider main container -->
+                <div class="swiper">
                 <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide"><img src="img/daughter of the pirate king.jfif" alt="daughter of the pirate king"></div>
-            <div class="swiper-slide"><img src="img/lendario.jfif" alt="lendário"></div>
-            <div class="swiper-slide"><img src="img/minha doce ragazza.jfif" alt="minha doce ragazza"></div>
-            <div class="swiper-slide"><img src="img/minha principessa devassa.jfif" alt="minha principessa devassa"></div>
-            <div class="swiper-slide"><img src="img/nevernight.jfif" alt="nevernight"></div>
-            <div class="swiper-slide"><img src="img/para conquistar um libertino.jfif" alt="para conquistar um libertino"></div>
-            <div class="swiper-slide"><img src="img/psycho shifters.jfif" alt="psycho shifters"></div>
-            <div class="swiper-slide"><img src="img/the king of battle and blood.jfif" alt="the king of battle and blood""></div>
-            <div class="swiper-slide"><img src="img/under one roof.jfif" alt="under one roof"></div>
-            <div class="swiper-slide"><img src="img/the night circus.jfif" alt="the night circus"></div>
-            </div>
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-            </div>
-            <div class="card">
-                <div class="card__descricao">
-                    <div class="descricao">
-                        <h3 class="descricao__titulo">Último lido...</h3>
-                        <h2 class="descricao__titulo-livro">The Night Circus</h2>
-                        <p class="descricao__texto">"The Night Circus" é uma envolvente história de magia que acompanha a competição mágica entre dois ilusionistas, Celia e Marco, enquanto eles se apaixonam em meio a um circo misterioso que surge à noite.</p>
-                    </div>
-                    <a href="#" class="descricao__link__imagem"><img src="img/the night circus.jfif" class="descricao__imagem" alt="the night circus"></a>
+                <div class="swiper-pagination"></div>
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><a href="#"><img src="img/daughter of the pirate king.jfif" alt="daughter of the pirate king"></a></div>
+                <div class="swiper-slide"><a href="#"><img src="img/lendario.jfif" alt="lendário"></a></div>
+                <div class="swiper-slide"><a href="#"><img src="img/minha doce ragazza.jfif" alt="minha doce ragazza"></a></div>
+                <div class="swiper-slide"><a href="#"><img src="img/minha principessa devassa.jfif" alt="minha principessa devassa"></a></div>
+                <div class="swiper-slide"><a href="#"><img src="img/nevernight.jfif" alt="nevernight"></a></div>
+                <div class="swiper-slide"><a href="#"><img src="img/para conquistar um libertino.jfif" alt="para conquistar um libertino"></a></div>
+                <div class="swiper-slide"><a href="#"><img src="img/psycho shifters.jfif" alt="psycho shifters"></a></div>
+                <div class="swiper-slide"><a href="#"><img src="img/the king of battle and blood.jfif" alt="the king of battle and blood"></a></div>
+                <div class="swiper-slide"><a href="#"><img src="img/under one roof.jfif" alt="under one roof"></a></div>
+                <div class="swiper-slide"><a href="#"><img src="img/the night circus.jfif" alt="the night circus"></a></div>
                 </div>
-                <div class="card__botoes">
-                    <ul class="botoes__ultimo-lido">
-                        <li><img src="img/Favoritos.svg" alt="Favoritar  class="botoes__lido"></li>
-                        <li><img src="img/Estrelinhas.svg"alt="estrelas" class="botoes__lido"></li>
-                    </ul>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                </div>
+                <div class="card">
+                    <div class="card__descricao">
+                        <div class="descricao">
+                            <h3 class="descricao__titulo">Último lido...</h3>
+                            <h2 class="descricao__titulo-livro">The Night Circus</h2>
+                            <p class="descricao__texto">"The Night Circus" é uma envolvente história de magia que acompanha a competição mágica entre dois ilusionistas, Celia e Marco, enquanto eles se apaixonam em meio a um circo misterioso que surge à noite.</p>
+                        </div>
+                        <a href="#" class="descricao__link__imagem"><img src="img/the night circus.jfif" class="descricao__imagem" alt="the night circus"></a>
+                    </div>
+                    <div class="card__botoes">
+                        <ul class="botoes__ultimo-lido">
+                            <li><img src="img/Favoritos.svg" alt="Favoritar  class="botoes__lido"></li>
+                            <li><img src="img/Estrelinhas.svg"alt="estrelas" class="botoes__lido"></li>
+                        </ul>
+                    </div>
+                </div>
                 </div>
             </div>
         </section>
@@ -143,8 +177,10 @@
         </ul>
         </section>
         <section class="contatos">
+            <div class="contatos__descricao">
             <h2 class="contatos__titulo">Faça seu Cadastro</h2>
             <p class="contatos__texto">E personalize sua estante do seu jeito!</p>
+            </div>
             <input type="email" class="contatos__email" placeholder="Cadastre seu Email">
         </section>
     </main>
@@ -162,6 +198,12 @@
     <hr>
     <footer class="rodape">
         <h2 class="rodape__titulo">Desenvolvido por Carolina M. Martins</h2>
+        <ul class="rodape__lista">
+            <li class="rodape__itens"><a href="#" class="rodape__itens-link">Acesse Nossa Comunidade</a></li>
+            <li class="rodape__itens"><a href="https://instagram.com/cah_aart" class="rodape__itens-link">Entre em Contato</a></li>
+            <li class="rodape__itens"><a href="https://github.com/Carol-mMartins" class="rodape__itens-link">Conheça nossos Projetos</a></li>
+            <li class="rodape__itens"><a href="#" class="rodape__itens-link">Ajuda</a></li>
+        </ul>
     </footer>
 </body>
 </html>

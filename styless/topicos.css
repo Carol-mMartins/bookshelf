@@ -24,3 +24,18 @@
     font-weight: 700;
     border-radius: 1em;
 }
+.topicos__ancora:hover{
+    background-color: var(--roxo-intenso);
+}
+@media screen and (min-width: 1000px){
+    .topicos__titulo{
+    font-size: 24px;
+    }
+    .topicos__item{
+        font-size: 30px;
+        padding: 0 0 1em 1em;
+    }
+    .topicos__ancora{
+        font-size: 25px;
+    }
+}

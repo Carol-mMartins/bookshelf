@@ -67,3 +67,68 @@
     width: 10em;
     padding: 0 0 1em 1em;
 }
+@media (min-width:1000px){
+    .swiper-slide img{
+        width: 60%;
+        padding: 0 3em;
+    }
+}
+@media screen and (min-width:1000px){
+    .carrossel__titulo{
+        font-size: 26px;
+        padding: 1em 0 1em 0;
+    }
+    .swiper-pagination{
+        margin: 2em 0 3em 0;
+    }
+    .swiper{
+        width: 70%;
+    }
+    .swiper-button-prev,
+    .swiper-button-next{
+        display: block;
+        top: 60%;
+        color: var(--azul-escuro);
+    }
+    .card{
+        width: 50%;
+        margin: 2em auto;
+    }
+    .descricao__titulo{
+        font-size: 20px;
+    }
+    .descricao__titulo-livro{
+        font-size: 25px;
+    }
+    .descricao__texto{
+        font-size: 16px;
+        text-align: justify;
+    }
+}
+@media screen and (min-width: 1728px){
+    .carrossel__conteiner{
+        display: flex;
+        margin: 0 20vw 1em 20vw;
+        gap: 2.5em;
+        align-items: center;
+    }
+    .swiper-pagination{
+        margin: 1em 0;
+    }
+    .swiper{
+        width: 100%;
+    }
+    .card{
+        margin: 1em 0;
+        border-radius: 20px;
+    }
+    .descricao{
+        margin-right: 1em;
+    }
+    .descricao__titulo{
+        font-size: 16px;
+    }
+    .descricao__imagem{
+        width: 7em;
+    }
+}
