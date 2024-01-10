@@ -38,4 +38,7 @@
     .topicos__ancora{
         font-size: 25px;
     }
+    .topicos{
+        padding: 3em 20vw;
+    }
 }

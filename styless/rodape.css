@@ -42,3 +42,12 @@ hr{
         text-decoration: none;
     }
 }
+@media screen and (min-width: 1728px){
+    .rodape__lista{
+        border-left: 2px solid var(--roxo-transparente);
+        padding: 1em;
+    }
+    .rodape__itens{
+        margin: 0 0 0 6em;
+    }
+}
