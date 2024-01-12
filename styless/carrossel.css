@@ -39,6 +39,10 @@
     padding: 1em;
     border-radius: 24px;
 }
+.botoes__ancora:hover{
+    background-color: var(--laranja-transparente);
+    color: var(--roxo-intenso);
+}
 .botoes__ultimo-lido{
     display: flex;
     justify-content: space-between;

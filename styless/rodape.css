@@ -41,6 +41,9 @@ hr{
         color: var(--laranja-transparente);
         text-decoration: none;
     }
+    .rodape__itens-link:hover{
+        color: var(--roxo-transparente);
+    }
 }
 @media screen and (min-width: 1728px){
     .rodape__lista{
@@ -49,5 +52,8 @@ hr{
     }
     .rodape__itens{
         margin: 0 0 0 6em;
+    }
+    .rodape__titulo{
+        margin-bottom: 1em;
     }
 }

@@ -7,6 +7,13 @@
     display: inline-block;
     padding:0% 0% 0% 2rem;
     }
+    .conteiner__botao:checked ~ .conteiner__rotulo > .cabeçalho__menu-hamburguer{
+        background-image: url(../img/Menu\ Aberto.svg);
+    }
+    .conteiner__botao:checked ~.conteiner__rotulo{
+        background: var(--azul-degrade);
+        padding: 2em 0em 2em 0em;
+    }
 .cabeçalho {
     background-color: var(--branco);
     display: flex;
@@ -17,6 +24,12 @@
 .conteiner{
     display: flex;
     align-items: center;
+}
+.conteiner__link{
+    text-transform: uppercase;
+}
+.conteiner__link:hover{
+    color: var(--laranja);
 }
 .conteiner__imagem, .conteiner__imagem__livro{
     padding: 1em;
@@ -50,6 +63,9 @@
     background-clip: text;
     text-transform: uppercase;
 }
+.opcoes__item__categoria{
+    cursor: pointer;
+}
 .conteiner__botao{
     display: none;
 }
@@ -58,6 +74,9 @@
 }
 .opcoes{
     display: none;
+}
+.opcoes__link:hover{
+    color: var(--laranja);
 }
 .conteiner__texto{
     display: none;
@@ -105,6 +124,22 @@
     }
     .swiper-slide img{
         width: 5%;
+    }
+    .opcoes__button:checked ~ .opcoes__rotulo > .opcoes__item{
+        background: var(--azul-degrade);
+       
+    }
+    .opcoes__button:checked + .opcoes__rotulo .opcoes__item__categoria {
+        color: var(--branco);
+    }
+    .opcoes__item{
+        padding: 2.35em 1.35em;
+    }
+    .lista-menu__item:hover{
+        background: var(--azul-degrade);
+    }
+    .lista-menu__item:hover > .lista-menu__link{
+        -webkit-text-fill-color: var(--branco);
     }
 }
 @media screen and (min-width: 1728px){
