@@ -1,0 +1,121 @@
+.link__amazon{
+    text-align: center;
+    text-decoration: none;
+    color: var(--roxo-intenso);
+    padding-left: 15%;
+}
+.conteudo-titulo{
+    font-family: var(--fonte-terciaria);
+    text-align: center;
+    font-size: 33px;
+    padding: 1rem;
+    color: var(--preto);
+}
+.conteudo__capa__img{
+    width: 50%;
+    padding: 0 25% 3% 25%;
+}
+.sinopse__texto{
+    font-family: var(--fonte-primaria);
+    text-align: justify;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 0 2em;
+    color: var(--branco);
+}
+.conteudo-texto{
+    padding: 1em;
+}
+.quotes-item{
+    color: var(--branco);
+    background-color: var(--roxo-intenso);
+    box-shadow:  0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 1em;
+    margin-bottom: 1em;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 10em;
+    text-align: center;
+}
+.titulos {
+    display: flex;
+    justify-content: center;
+}
+.livro__titulo {
+    font-family: var(--fonte-secundaria);
+    color: var(--cinza);
+    font-size: 20px;
+    padding: 0 2em;
+}
+.imagens {
+    display: flex;
+    justify-content: center;
+}
+.livro__anterior-img{
+    width: 90%;
+    padding-top: 1em;
+}
+.proximo__livro-img {
+    width: 92%;
+    padding-top: 1em;
+    margin: 0 0.5em;
+}
+.acotar__link, .acowar__link{
+    width: 35%;
+    margin: 0 1em;
+}
+.autor__card{
+    background-color: var(--branco);
+    border-radius: 10px;
+    margin: 1em;
+    margin-bottom: 10em;
+    box-shadow:  0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.autor__titulo{
+    font-family: var(--fonte-secundaria);
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+}
+.autor__texto{
+    text-align: center;
+    padding: 1em;
+}
+.carrossel__relacionados-titulo{
+    font-family: var(--fonte-secundaria);
+    font-size: 25px;
+    background: var(--azul-degrade);
+    padding: 0.8em 4em;
+    color: var(--branco);
+}
+.swiper-slide img{
+    width: 100%;
+}
+.button-prev,
+.button-next{
+    display: none;
+}
+.pagination{
+    position: initial;
+    display: block;
+}
+.background-container {
+    position: relative;
+    min-height: auto;
+}
+.background-image__acomaf {
+    background-image: url('../img/velaris.png');
+    background-size: contein;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 50vh;
+    width: 50%;
+    bottom: 0;
+    margin: 10em 5em 14em 0;
+}
+
+main {
+    position: relative;
+    z-index: 2;
+}

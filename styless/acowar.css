@@ -1,0 +1,32 @@
+.livro__anterior-link, .proximo__livro-link{
+    width: 50%;
+    margin: 1em;
+}
+.livro__anterior-img{
+    width: 65%;
+    margin: 0 2.5em;
+}
+.proximo__livro-img{
+    width: 65%;
+    margin: 0 1.5em;
+}
+.background-container {
+    position: relative;
+    min-height: auto;
+}
+.background-image__acowar {
+    background-image: url('../img/velaris.png');
+    background-size: auto;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    bottom: 0;
+    margin: 0em 0 15em 5em;
+}
+
+main {
+    position: relative;
+    z-index: 2;
+}
