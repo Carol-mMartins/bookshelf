@@ -8,7 +8,7 @@
     font-family: var(--fonte-terciaria);
     text-align: center;
     font-size: 33px;
-    padding: 1rem;
+    padding: 4%;
     color: var(--preto);
 }
 .conteudo__capa__img{
@@ -40,6 +40,10 @@
 .titulos {
     display: flex;
     justify-content: center;
+    gap: 1em;
+    font-family: var(--fonte-primaria);
+    color: var(--branco);
+    font-size: 18px;
 }
 .livro__titulo {
     font-family: var(--fonte-secundaria);
@@ -48,21 +52,28 @@
     padding: 0 2em;
 }
 .imagens {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-areas: 
+        "imagem1 imagem2";
+    gap: 1em;
+    width: 21.5em;
+    margin: 0 auto;
+    border: 1px none;
+    box-sizing: border-box;
 }
-.livro__anterior-img{
-    width: 90%;
-    padding-top: 1em;
+
+.livro__anterior-img {
+    grid-area: imagem1;
+    width: 100%; /* Largura máxima */
+    max-height: 100%;
+    object-fit: cover;
 }
+
 .proximo__livro-img {
-    width: 92%;
-    padding-top: 1em;
-    margin: 0 0.5em;
-}
-.acotar__link, .acowar__link{
-    width: 35%;
-    margin: 0 1em;
+    grid-area: imagem2;
+    width: 100%; /* Largura máxima */
+    max-height: 100%;
+    object-fit: cover;
 }
 .autor__card{
     background-color: var(--branco);
@@ -88,6 +99,9 @@
     padding: 0.8em 4em;
     color: var(--branco);
 }
+.carrossel__conteiner{
+    padding: 2em 0 2em 0;
+}
 .swiper-slide img{
     width: 100%;
 }
@@ -98,6 +112,90 @@
 .pagination{
     position: initial;
     display: block;
+}
+
+@media screen and (min-width: 1000px) {
+    .conteudo__livro{
+        display: grid;
+        grid-template-areas: 
+            "imagem texto"
+            "link none";
+    }
+    .conteudo__capa__img{
+        grid-area: imagem;
+        align-self: center;
+        width: 15em;
+        padding: 0 2em 0 6em;
+    }
+    .conteudo-texto{
+        grid-area: texto;
+        font-size: 18px;
+        padding: 0 4em 0 0;
+    }
+    .link__amazon{
+        grid-area: link;
+        padding: 1em 0 1em 4em;
+    }
+    .link__amazon:hover{
+        color: var(--cinza);
+    }
+    .quotes-lista{
+        column-count: 2;
+        column-gap: 20px;
+        padding: 2em 5em;
+    }
+    .quotes-item{
+        padding: 2em;
+        break-inside: avoid-column;
+    }
+    .sequencia{
+        display: grid;
+        grid-template-areas: 
+            'titulo titulo none'
+            'proximo proximo autor';
+        margin: 1em 0;
+        padding: 0;
+    }
+    .titulos{
+        grid-area: titulo;
+    }
+    .livro-anterior__titulo, .livro-proximo__titulo{
+        padding: 1em 2em;
+    }
+    .imagens{
+        grid-area: proximo;
+        place-self: center;
+        align-content: space-evenly;
+        padding: 0;
+        margin: 0;
+    }
+    .livro__anterior-link, .proximo__livro-link{
+        width: 12em;
+        height: 18em;
+    }
+    .livro__anterior-img, .proximo__livro-img{
+        margin: 0;
+        padding: 0 ;
+        width: 12em;
+    }
+    .autor__card{
+        grid-area: autor;
+        border-radius: 0 50px 50px 50px;
+        margin: 0 3em 0 0;
+        width: 25em;
+        height: 20em;
+    }
+    .carrossel__relacionados-titulo{
+        text-align: center;
+        font-size: 35px;
+    }
+    .swiper-slide img{
+        width: 15em;
+        height: 20em;
+    }
+    .swiper-button-prev, .swiper-button-next{
+    display: block;
+    }
 }
 /*.background-container {
     position: relative;

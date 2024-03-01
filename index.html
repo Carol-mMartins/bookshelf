@@ -75,7 +75,10 @@
         <section class="banner">
             <h2 class="banner__titulo">Procurando um Livro Específico?</h2>
             <p class="banner__texto">Encontre na sua estante a leitura perfeita para o seu momento!</p>
-            <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
+            <div class="conteudo__pesquisa">
+                <input type="search" id="searchInput" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
+                <ul id="resultsList"></ul>
+            </div>
         </section>
         <section class="carrossel">
             <h2 class="carrossel__titulo">Últimos Livros Adicionados</h2>
@@ -205,5 +208,6 @@
             <li class="rodape__itens"><a href="#" class="rodape__itens-link">Ajuda</a></li>
         </ul>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
